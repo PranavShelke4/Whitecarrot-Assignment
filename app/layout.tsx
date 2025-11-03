@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Next App',
-  description: 'Created with Next.js',
+  title: 'Careers Page Builder - WhiteCarrot AI Assignment',
+  description: 'Create beautiful, customizable careers pages for your company. Built with Next.js, TypeScript, and Supabase.',
   generator: 'Next.js',
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} suppressHydrationWarning={true}>
         {children}
         <Analytics />
       </body>
